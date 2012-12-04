@@ -1,0 +1,138 @@
+!!! 5
+html(lang='en')
+    head
+        title Immersive Applications
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        meta(name="description", content="Applications by Immersive Applications")
+        meta(name="keywords", content="apps, immersive applications, applications, mac, iphone, whats for lunch, app factory, partytonight, bs generator, bs document generator, matcher")
+        link(href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css', rel='stylesheet', type='text/css')
+        style
+            a.thumbnail h3 { 
+                text-align: center; 
+            }
+            
+            .thumbnail { 
+                border-radius: 20px; 
+            }
+            
+            .row { 
+                margin-top: 40px
+            }
+            
+            .github {
+                position: relative; 
+                top: 15px; 
+                padding-left: 10px; 
+                border: none;
+                background-color: transparent;
+                width: 170px;
+                height: 30px;
+            }
+        script
+          //<![CDATA[
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23541313-1']);
+          _gaq.push(['_setDomainName', 'immersiveapplications.com']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+          //]]>
+      body
+        .container
+          .row
+            .span4.offset4
+              img(src='img/logo.jpeg', alt="logo")
+          .row
+            ul.thumbnails
+              li.span4
+                a.thumbnail(data-toggle='modal', href='#app-factory-modal', role='button')
+                  img(alt='App Factory Icon', src='img/app_factory.png')
+                  h3 App Factory
+              li.span4
+                a.thumbnail(data-toggle='modal', href='#partytonight-modal', role='button')
+                  img(alt='PartyTonight Icon', src='img/PartyTonight.png')
+                  h3 PartyTonight
+              li.span4
+                a.thumbnail(data-toggle='modal', href='#whats-for-lunch-modal', role='button')
+                  img(alt="What's For Lunch Icon", src='img/Whats_For_Lunch.png')
+                  h3 Whats For Lunch?
+          .row.offset1
+            ul.thumbnails
+              li.span4
+                a.thumbnail(data-toggle='modal', href='#bs-generator-modal', role='button')
+                  img(alt='BS Document Generator Icon', src='img/bs_generator.png')
+                  h3 BS Document Generator
+              li.span4
+                a.thumbnail(data-toggle='modal', href='#matcher-modal', role='button')
+                  img(alt='Matcher Icon', src='img/matcher.jpg')
+                  h3 Matcher
+        #app-factory-modal.modal.hide.fade.in(aria-hidden='true', aria-label='app-factory-label', role='dialog', tabindex='-1')
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') &times;
+            h3#app-factory-label App Factory
+          .modal-body
+            p App Factory allows you to easily convert your scripts into full applications.
+            p
+              | It works with any script you can run from the command line and allows using custom icons.
+            a(href='https://itunes.apple.com/us/app/app-factory/id556464792?ls=1&mt=12', target='itunes_store')
+              img(alt='App Factory - Immersive Applications', src='http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif', style='border: 0;')
+            iframe.github(src='http://ghbtns.com/github-btn.html?user=jakesjews&repo=App-Factory&type=fork&size=large') Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://ghbtns.com/github-btn.html?user=jakesjews&repo=App-Factory&type=fork&size=large
+          .modal-footer
+            button.btn(data-dismiss='modal') Close
+        #bs-generator-modal.modal.hide.fade.in(aria-hidden='true', aria-label='bs-generator-label', role='dialog', tabindex='-1')
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') &times;
+            h3#bs-generator-label BS Document Generator
+          .modal-body
+            p
+              | The BS Document Generator takes all the difficulty out of creating your buzzword-compliant documentation. Impress your friends with your "synergistic visionary metrics" and easily generate PDF documentation for your next meeting.
+            a(href='https://chrome.google.com/webstore/detail/bknoocfigoeaaoiffhdaigclkaeoencg')
+              img(alt='BS Generator Chrome Store', src='img/chrome_badge.png')
+            iframe.github(src='http://ghbtns.com/github-btn.html?user=jakesjews&repo=BS-Document-Generator&type=fork&size=large')  Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://ghbtns.com/github-btn.html?user=jakesjews&repo=BS-Document-Generator&type=fork&size=large
+          .modal-footer
+            button.btn(data-dismiss='modal') Close
+        #matcher-modal.modal.hide.fade.in(aria-hidden='true', aria-label='matcher-label', role='dialog', tabindex='-1')
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') &times;
+            h3#matcher-label Matcher
+          .modal-body
+            p
+              | Matcher uses your profile to scan your friends list and calculate the people most compatible with you.
+            a(href='http://matcher.azurewebsites.net/')
+              img(alt='Matcher - Facebook App', height='100', src='img/Facebook-App-Center.jpeg', width='100')
+            iframe.github(src='http://ghbtns.com/github-btn.html?user=jakesjews&repo=Matcher&type=fork&size=large')  Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://ghbtns.com/github-btn.html?user=jakesjews&repo=Matcher&type=fork&size=large
+          .modal-footer
+            button.btn(data-dismiss='modal') Close
+        #partytonight-modal.modal.hide.fade.in(aria-hidden='true', aria-label='partytonight-label', role='dialog', tabindex='-1')
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') &times;
+            h3#partytonight-label PartyTonight
+          .modal-body
+            p
+              | Looking for something to do? With PartyTonight finding a party is easy. This app allows you to find, rate, and share a fun time with everyone in your community. The days of being out of the loop are over. With this app you will always know whats going on in your town and with the rating system you will know the details of all parties around you.
+            p
+              | PartyTonight gives you the power to find the most interesting parties and avoid the lame ones. The days of sitting at home bored are over. The iPhones location service will show you exactly where the parties are taking place and how to get to them fast! All parties are not created equal, let PartyTonight be your tool to success when it comes to having fun in your town.
+            a(href='http://itunes.apple.com/us/app/partytonight-ad-supported/id436667981?mt=8&uo=4', target='itunes_store')
+              img(alt='PartyTonight - Ad Supported - Immersive Applications', src='http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif', style='border: 0;')
+            iframe.github(src='http://ghbtns.com/github-btn.html?user=jakesjews&repo=PartyTonight-iPhone-App&type=fork&size=large') http://ghbtns.com/github-btn.html?user=jakesjews&repo=PartyTonight-iPhone-App&type=fork&size=large
+          .modal-footer
+            button.btn(data-dismiss='modal') Close
+        #whats-for-lunch-modal.modal.hide.fade.in(aria-hidden='true', aria-label='whats-for-lunch-label', role='dialog', tabindex='-1')
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') &times;
+            h3#whats-for-lunch-label What's For Lunch?
+          .modal-body
+            p
+              | Finally there is a solution to endless office debates about where to get lunch. What's For Lunch takes all the difficulty out of deciding where to get food.
+            p
+              | This app is powered by Yelp and provides the ability to randomly select a restaurant located within 25 miles. Either press the button or shake your phone to select where you will eat.
+            a(href='http://itunes.apple.com/us/app/whats-for-lunch/id505887380?mt=8&uo=4', target='itunes_store')
+              img(alt="What's For Lunch? - Immersive Applications", src='http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif', style='border: 0;')
+            iframe.github(src='http://ghbtns.com/github-btn.html?user=jakesjews&repo=What-s-For-Lunch&type=fork&size=large')  Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://ghbtns.com/github-btn.html?user=jakesjews&repo=What-s-For-Lunch&type=fork&size=large
+          .modal-footer
+            button.btn(data-dismiss='modal') Close
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', type='text/javascript')
+        script(src='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js', type='text/javascript')
